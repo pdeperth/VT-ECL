@@ -1,0 +1,11 @@
+Dans le contexte actuel d'exportation massive des ressources de calcul et de mémoire vers le Cloud, la question de la délocalisation de données ou du traitement de données personnelles se pose avec de plus en plus d'acuité.
+
+L'explosion du secteur de l'analyse de données et de l'apprentissage automatique signifie que de plus en plus d'acteurs doivent faire un usage, parfois ponctuel, de ressources de calcul, et se diriger vers une implémentation dans le Cloud semble alors être une solution toute trouvée à ce nouveau problème. Cependant, elle présente également des zones de doute quant à la préservation de la confidentialité des données traitées sur ces architectures.
+
+Explosion de l'utilisation de resources Cloud pour faire tourner des algorithmes d'apprentissage automatique
+Problème de la confidentialité des données
+	Dilemme entre sécurité et rapidité
+	Solutions proposées récemment
+Vérification de l'authenticité de l'hôte Cloud
+	Protocole SafetyNets
+Bibliographie
