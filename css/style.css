@@ -119,10 +119,9 @@ hr {
 }
 /* Home Style */
 header {
-	background: url(../img/header.jpeg) no-repeat bottom right;
+	background: url(../img/header.png) no-repeat bottom right;
 	background-size: cover;
 	color: #cfcfcf;
-	filter: brightness(50%);
 	position: relative;
 	height: 100%;
 }
