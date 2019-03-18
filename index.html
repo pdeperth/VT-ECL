@@ -306,7 +306,7 @@
     </div>
     <div class="space"></div>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-7">
         <div class="about-text">
           <h4>Constitution du message chiffré</h4>
           <p>Dans l'exemple de chiffrement homomorphique par moduli polynomiaux cité dans la partie précédente et expliqué plus en détail <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">ici</a>, on peut voir que le chiffrement homomorphique utilise une clé privée (<i>s</i> dans l'équation ci-contre), un masque changeant à chaque chiffrement, défini à partir d'un polynôme <i>u</i> tiré aléatoirement, une clé publique correspondant à la clé privée, et du bruit.</p>
@@ -314,11 +314,28 @@
           <p>Finalement, le texte chiffré est constitué des deux polynômes présentés ci-contre. </p>
           </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-6 web">
+      <div class="col-sm-6 col-md-6 col-lg-5 web">
           <div class="hover-bg">
             <a href="img/gazelle/eq_ct.png" rel="prettyPhoto">
               <img src="img/gazelle/eq_ct.png" class="img-responsive">
             </a>
+          </div>
+      </div>
+    </div>
+
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-4 web">
+          <div class="hover-bg">
+            <a href="img/gazelle/dechiffrage.png" rel="prettyPhoto">
+              <img src="img/gazelle/dechiffrage.png" class="img-responsive">
+            </a>
+          </div>
+      </div>
+      <div class="col-md-8">
+        <div class="about-text">
+          <h4>Déchiffrage</h4>
+          <p>A partir du message chiffré, s'il on dispose de la clé privé, de la clé publique et du polynôme <i>u</i> généré, on peut remonter au message de départ à l'aide d'une opération inverse, qui, en raison du bruit rajouté, ne renvoyra pas des coefficients exacts, mais des réels suffisamment proches de l'entier correspondant pour ne pas se tromper.</p>
           </div>
       </div>
     </div>
