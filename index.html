@@ -248,7 +248,7 @@
         <div class="about-text">
           <h4>Chiffrement homomorphique</h4>
           <p>Le chiffrement homomorphique, utilisé dans le protocole Gazelle présenté dans la section suivante, est essentiel pour tous les protocoles effectuant des opérations sur les données chiffrées. Il s'agit d'un type de chiffrement supportant, lorsque des opérations sont effectuées sur les information chiffrées, que le déchiffrage laisse apparaître ces mêmes opérations effectuées sur les données d'origine.</p>
-          <p>On peut définir un chiffrement homomorphique par exemple à partir de moduli polynômiaux, en utilisantn une famille de polynômes définis modulo un coefficient supérieur plus un, avec des coefficients entiers prenant des valeurs elles aussi définies modulo un entier. L'article <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">suivant</a> de <i>n1 analytics</i> explique cela de manière progressive et détaillée.</p>
+          <p>On peut définir un chiffrement homomorphique par exemple à partir de moduli polynomiaux, en utilisantn une famille de polynômes définis modulo un coefficient supérieur plus un, avec des coefficients entiers prenant des valeurs elles aussi définies modulo un entier. L'article <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">suivant</a> de <i>n1 analytics</i> explique cela de manière progressive et détaillée.</p>
           </div>
       </div>
     </div>
@@ -303,6 +303,24 @@
 
     <div class="subsection-title text-center center">
       <h3>Utilisation du chiffrement homomorphique</h3>
+    </div>
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-text">
+          <h4>Réseau de neurones récurrent (RNN)</h4>
+          <p>Dans l'exemple de chiffrement homomorphique par moduli polynomiaux cité dans la partie précédente et expliqué plus en détail <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">ici</a>, on peut voir que le chiffrement homomorphique utilise une clé privée (<i>s</i> dans l'équation ci-contre), un masque changeant à chaque chiffrement, défini à partir d'un polynôme <i>u</i> tiré aléatoirement, une clé publique correspondant à la clé privée, et du bruit.</p>
+          <p>Dans l'équation ci-contre, le message correspond au polynôme noté <i>m</i>, t est l'entier modulo lequel sont définis les coefficients polynomiaux du message à chiffrer, et q l'entier modulo lequel sont définis les coefficients de la clé publique. <i>u</i> et <i>s</i> prennent des coefficients égaux à -1, 0 ou 1, et les erreurs des coefficients faibles définis par des lois gaussiennes relativement à <i>q</i>. </p>
+          <p>Finalement, le texte chiffré est constitué des deux polynômes présentés ci-contre. </p>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 web">
+          <div class="hover-bg">
+            <a href="img/gazelle/eq_ct.png" rel="prettyPhoto">
+              <img src="img/gazelle/eq_ct.png" class="img-responsive">
+            </a>
+          </div>
+      </div>
     </div>
 
   </div>
