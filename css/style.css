@@ -160,6 +160,10 @@ header p {
 }
 
 /* intro-section */
+#intro-section {
+	padding: 120px 0;
+	background-color: #fff;
+}
 #intro-section h4 {
 	font-weight: 700;
 }
