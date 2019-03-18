@@ -192,7 +192,13 @@ header p {
 	color: #0dbf9b;
 }
 
+/* Encryption section */
+
 /* Gazelle section */
+#gazelle-section {
+	padding: 120px 0;
+	background-color: #f6f6f6;
+}
 
 /* Gallery Section
 ==============================*/
