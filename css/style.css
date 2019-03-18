@@ -158,6 +158,22 @@ header p {
 	color: #0dad8d;
 	border-color: #fff;
 }
+
+/* intro-section */
+#intro-section h4 {
+	font-weight: 700;
+}
+.space {
+	margin-top: 40px;
+}
+#intro-section i.fa {
+	font-size: 40px;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+	color: #0dbf9b;
+}
+
+
 /* Services Section */
 #services-section {
 	padding: 120px 0;
