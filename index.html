@@ -302,7 +302,7 @@
     <div class="space"></div>
 
     <div class="subsection-title text-center center">
-      <h3>Utilisation du chiffrement homomorphique</h3>
+      <h3>Utilisation du chiffrement homomorphique, étude à partir du cas des moduli polynomiaux</h3>
     </div>
     <div class="space"></div>
     <div class="row">
@@ -336,6 +336,43 @@
         <div class="about-text">
           <h4>Déchiffrage</h4>
           <p>A partir du message chiffré, s'il on dispose de la clé privé, de la clé publique et du polynôme <i>u</i> généré, on peut remonter au message de départ à l'aide d'une opération inverse, qui, en raison du bruit rajouté, ne renvoyra pas des coefficients exacts, mais des réels suffisamment proches de l'entier correspondant pour ne pas se tromper.</p>
+          <p>L'image ci-contre renvoie à une représentation des polynômes trouvée sur la <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">page de n1 analytics</a> : les cercles correspondent chacun à une puissance polynomiale, et la localisation du point sur le cercle indique la valeur du coefficient entier correspondant dans l'intervalle définit par la modulation. </p>
+          </div>
+      </div>
+    </div>
+
+    <div class="space"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="about-text">
+          <h4>Réalisation d'opérations sur le message chiffré</h4>
+          <p>Si l'on réalise une série d'opération sur les polynômes du message chiffré avant le déchiffrage, on pourra toujours remonter comme avant à une approximation du polynôme de départ, mais les erreurs engendrées par les bruits s'accumuleront et l'on aura de plus en plus de chances de faire une erreur dans la régression.</p>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
+        <div class="about-text">
+          <p>Pour les opérations d'additions, on obtient une répartition gaussienne des erreurs donnée dans la figure ci-contre en fonction du nombre d'opérations, sur une échelle on l'on se trompe dès que l'erreur dépasse 64. On peut donc seulement effectuer une opération et rester sûr du résultat.</p>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4 web">
+          <div class="hover-bg">
+            <a href="img/gazelle/additions_synthese.png" rel="prettyPhoto">
+              <img src="img/gazelle/additions_synthese.png" class="img-responsive">
+            </a>
+          </div>
+      </div>
+      <div class="col-md-2">
+        <div class="about-text">
+          <p>à droite, le graphique montre une sythèse de la répartition des erreurs après une seule multiplication, sur une échelle ou un dépassement de 512 en norme équivault à se tromper. Il montre qu'il y a environ un pourcent d'erreur au déchiffrage après une multiplication, ce qui n'est pas une proportion acceptable.</p>
+          </div>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4 web">
+          <div class="hover-bg">
+            <a href="img/gazelle/multiplication.png" rel="prettyPhoto">
+              <img src="img/gazelle/multiplication.png" class="img-responsive">
+            </a>
           </div>
       </div>
     </div>
