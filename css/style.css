@@ -341,6 +341,12 @@ ol.type li a:hover {
 .section-title h2 {
 	margin-bottom: 30px;
 }
+.subsection-title.center {
+	padding: 30px 0;
+}
+.subsection-title h2 {
+	margin-bottom: 30px;
+}
 img.img-circle.team-img {
 	width: 150px;
 	height: 150px;
