@@ -177,7 +177,7 @@ header p {
 /* Services Section */
 #services-section {
 	padding: 120px 0;
-	background-color: #fff;
+	background-color: #f6f6f6;
 }
 #services-section h4 {
 	font-weight: 700;
@@ -191,6 +191,9 @@ header p {
 	transition: all 0.5s;
 	color: #0dbf9b;
 }
+
+/* Gazelle section */
+
 /* Gallery Section
 ==============================*/
 #works-section {
