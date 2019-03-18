@@ -159,18 +159,18 @@ header p {
 	border-color: #fff;
 }
 
-/* intro-section */
-#intro-section {
+/* end of intro intro-section */
+#end-of-intro-section {
 	padding: 120px 0;
 	background-color: #fff;
 }
-#intro-section h4 {
+#end-of-intro-section h4 {
 	font-weight: 700;
 }
 .space {
 	margin-top: 40px;
 }
-#intro-section i.fa {
+#end-of-intro-section i.fa {
 	font-size: 20px;
 	margin-bottom: 20px;
 	transition: all 0.5s;
