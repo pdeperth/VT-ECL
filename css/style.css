@@ -204,6 +204,12 @@ header p {
 	background-color: #fff;
 }
 
+/* Concluding section */
+#ccl-section {
+	padding: 120px 0;
+	background-color: #f6f6f6;
+}
+
 /* Gallery Section
 ==============================*/
 #works-section {
