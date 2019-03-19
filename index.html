@@ -390,6 +390,29 @@
       <h3>Utilisation des circuits brouillés sur les opérations non linéaires</h3>
     </div>
     <div class="space"></div>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-4 web">
+          <div class="hover-bg">
+            <a href="img/gazelle/circuits_brouilles.png" rel="prettyPhoto">
+              <img src="img/gazelle/circuits_brouilles.png" class="img-responsive">
+            </a>
+          </div>
+          <div class="hover-bg">
+            <a href="img/gazelle/garbled.png" rel="prettyPhoto">
+              <img src="img/gazelle/garbled.png" class="img-responsive">
+            </a>
+          </div>
+      </div>
+      <div class="col-md-8">
+        <div class="about-text">
+          <h4>Principe</h4>
+          <p>Les circuits brouillés (<i>garbled circuits</i> en anglais), sont un protocole efficace pour effectuer des opérations non linéaires sans apprendre les données de départ.</p>
+          <p>Les opérations non-linéaires sont modélisées par un cricuit d'opérateurs NON, ET et OU, prenant deux entrée, l'une fournie par le système fixe, et l'autre par le système dans le Cloud. </p>
+          <p>Le système local modifie ce circuit de manière aléatoire, et aussi la donnée en entrée avec les mêmes opérations pour que le nouveaux ciruict renvoie bien la réponse attendue avec la donnée originelle en prenant en entrée la donnée modifiée. Le circuit ainsi "brouillé" et la donnée brouillée sont ensuite envoyée au système dans le Cloud qui, en prenant son entrée à lui, qu'il brouille de même, pourra finalement calculer le résultat du circuit, identique au résultat si le circuit n'était pas brouillé, sans jamais avoir eu accès à la donnée fournie par le système hors du Cloud.</p>
+          <p>Ceci est particulièrement efficace sur les opérations non-linéaires </p>
+          </div>
+      </div>
+    </div>
 
   </div>
 </div>
