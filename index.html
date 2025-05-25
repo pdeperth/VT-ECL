@@ -197,7 +197,7 @@
       </div>
       <div class="col-md-3 col-sm-6 col-lg-4 service"> <i class="fa fa-gears"></i>
         <h4>Chiffrement</h4>
-        <p>Ensuite, une autre solution de sécurisation évidente est le cryptage des données stockées sur nuage. Même si le cryptage ne suffit pas pouvant être décrypté avec des forces de calcul suffisamment élevée, il ajoute une difficulté supplémentaire à la lecture d'informations confidentielles. Différents types de chiffrements sont présentés dans la section suivante.</p>
+        <p>Ensuite, une autre solution de sécurisation évidente est le chiffrement des données stockées sur nuage. Même si le chiffrement ne suffit pas pouvant être décrypté avec des forces de calcul suffisamment élevée, il ajoute une difficulté supplémentaire à la lecture d'informations confidentielles. Différents types de chiffrements sont présentés dans la section suivante.</p>
       </div>
       <div class="col-md-3 col-sm-6 col-lg-4 service"> <i class="fa fa-scissors"></i>
         <h4>Séparation des données de leur traitement</h4>
@@ -216,7 +216,7 @@
       <h2>Chiffrements</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>De nombreux types de chiffrement peuvent être utilisés dans une application Cloud pour apporter une amélioration par rapport aux cryptages les plus basiques. Ici, l'on détaillera les cas du chiffrement par attributs, du chiffrement homomorphe et du chiffrement recherchable, qui permettront ensuite de mieux comprendre le protocole Gazelle.</p>
+      <p>De nombreux types de chiffrement peuvent être utilisés dans une application Cloud pour apporter une amélioration par rapport aux chiffrements les plus basiques. Ici, l'on détaillera les cas du chiffrement par attributs, du chiffrement homomorphe et du chiffrement recherchable, qui permettront ensuite de mieux comprendre le protocole Gazelle.</p>
     </div>
     <div class="space"></div>
     <div class="row">
@@ -380,7 +380,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="about-text">
-          <p>Ces résultats montrent que le chiffrement homomorphique étudié sera efficace seulement pour les opérations linéaires. En pratique, c'est le cas pour tous les chiffrements homomorphiques. Ils seront donc particulièrement efficace sur la partie convolutive du réseau de neurones.</p>
+          <p>Ces résultats montrent que le chiffrement homomorphe étudié sera efficace seulement pour les opérations linéaires. En pratique, c'est le cas pour tous les chiffrements homomorphes. Ils seront donc particulièrement efficace sur la partie convolutive du réseau de neurones.</p>
           </div>
       </div>
     </div>
@@ -419,13 +419,13 @@
 
     <div class="space"></div>
     <div class="subsection-title text-center center">
-      <h3>Combinaison du chiffrement homomorphique et des circuits brouillés dans le protocole Gazelle</h3>
+      <h3>Combinaison du chiffrement homomorphe et des circuits brouillés dans le protocole Gazelle</h3>
     </div>
     <div class="space"></div>
     <div class="row">
       <div class="col-md-6">
         <div class="about-text">
-            <p>Dans le protocole Gazelle, des allers-retours sont effectués entre serveur Cloud et serveur local à chaque opération. Les opérations linéaires sont réalisées par chiffrement homomorphique, tandis que les opérations non-linéaires sont confiées à des circuits brouillés, sans jamais envoyer les données au serveur Cloud. De plus, chaque serveur chiffre tout avec une clé générée en début de processus, et le serveur Cloud envoie la sienne à l'autre en fin de course, comme le montre le schéma de synthèse ci-contre.</p>
+            <p>Dans le protocole Gazelle, des allers-retours sont effectués entre serveur Cloud et serveur local à chaque opération. Les opérations linéaires sont réalisées par chiffrement homomorphe, tandis que les opérations non-linéaires sont confiées à des circuits brouillés, sans jamais envoyer les données au serveur Cloud. De plus, chaque serveur chiffre tout avec une clé générée en début de processus, et le serveur Cloud envoie la sienne à l'autre en fin de course, comme le montre le schéma de synthèse ci-contre.</p>
           </div>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6 web">
@@ -448,7 +448,7 @@
       <hr>
       <div class="clearfix"></div>
       <p>Une application de réseaux de neurones dans le Cloud peut être sécurisée à de nombreux niveau, mais l'on ne pourra jamais garantir totalement l'accès aux données. Il est donc utile de disposer d'un protocole comme Gazelle pour permettre le traitement sans envoi des données.</p>
-      <p>Le protocole Gazelle présente l'avantage d'utiliser plusieurs types de chiffrement spécialisés dans les opérations linéaires ou non linéaires ce qui rend les temps de calculs plus courts que les opérations effectuées par le passé, et cette utilisation exploitable. D'après les auteurs de la publication, on gagne trois ordres de grandeurs en temps de calcul et deux ordres de grandeurs en largeur de bande réseau nécessaire par rapport aux approches purement homomorphiques.</p>
+      <p>Le protocole Gazelle présente l'avantage d'utiliser plusieurs types de chiffrement spécialisés dans les opérations linéaires ou non linéaires ce qui rend les temps de calculs plus courts que les opérations effectuées par le passé, et cette utilisation exploitable. D'après les auteurs de la publication, on gagne trois ordres de grandeurs en temps de calcul et deux ordres de grandeurs en largeur de bande réseau nécessaire par rapport aux approches purement homomorphes.</p>
     </div>
     <div class="row">
       <div class="col-md-12">
@@ -477,7 +477,7 @@
           <ul>
             <li>Pour bien appréhender les <b>risques liés au Cloud</b>, un rapport de la Cloud Security Alliance : <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=6&cad=rja&uact=8&ved=2ahUKEwiKg--SiI3hAhUZ8uAKHUMZA7oQFjAFegQIChAC&url=https%3A%2F%2Fdownloads.cloudsecurityalliance.org%2Fassets%2Fresearch%2Ftop-threats%2Ftreacherous-12-top-threats.pdf&usg=AOvVaw3Dqd22S6kY41OpIzpqI1GE">Treacherous top 12 threats</a>.</li>
             <li>Pour se tenir informé en matière de <b>sécurité du Cloud</b> : <a href="https://guidesforcloudsecurity.com/all-articles/">Guides for Cloud Security</a>.</li>
-            <li>Sur le <b>cryptage homomorphique</b> : <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">blog de n1 analytics</a>.</li>
+            <li>Sur le <b>chiffrement homomorphe</b> : <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">blog de n1 analytics</a>.</li>
             <li>Sur les <b>circuit brouillés</b>, explication didactique sur stackoverflow : <a href="https://crypto.stackexchange.com/questions/37991/what-exactly-is-a-garbled-circuit">par Mikero</a>.</li>
             <li>Présentation générale du <b>protocole Gazelle</b> : <a href="http://news.mit.edu/2018/more-efficient-security-cloud-based-machine-learning-0817"> article du MIT</a>.</li>
             <li>Publication du <b>protocole Gazelle</b> par Chiraag Juvekar, Vinod Vaikuntanathan et Anantha Chandrakasan : <a href="https://arxiv.org/abs/1801.05507">Gazelle: A Low Latency Framework for Secure Neural Network Inference</a>.</li>
