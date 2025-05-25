@@ -216,7 +216,7 @@
       <h2>Chiffrements</h2>
       <hr>
       <div class="clearfix"></div>
-      <p>De nombreux types de chiffrement peuvent être utilisés dans une application Cloud pour apporter une amélioration par rapport aux cryptages les plus basiques. Ici, l'on détaillera les cas du chiffrement par attributs, du chiffrement homomorphique et du chiffrement recherchable, qui permettront ensuite de mieux comprendre le protocole Gazelle.</p>
+      <p>De nombreux types de chiffrement peuvent être utilisés dans une application Cloud pour apporter une amélioration par rapport aux cryptages les plus basiques. Ici, l'on détaillera les cas du chiffrement par attributs, du chiffrement homomorphe et du chiffrement recherchable, qui permettront ensuite de mieux comprendre le protocole Gazelle.</p>
     </div>
     <div class="space"></div>
     <div class="row">
@@ -246,9 +246,9 @@
       </div>
       <div class="col-md-8">
         <div class="about-text">
-          <h4>Chiffrement homomorphique</h4>
-          <p>Le chiffrement homomorphique, utilisé dans le protocole Gazelle présenté dans la section suivante, est essentiel pour tous les protocoles effectuant des opérations sur les données chiffrées. Il s'agit d'un type de chiffrement supportant, lorsque des opérations sont effectuées sur les information chiffrées, que le déchiffrage laisse apparaître ces mêmes opérations effectuées sur les données d'origine.</p>
-          <p>On peut définir un chiffrement homomorphique par exemple à partir de moduli polynomiaux, en utilisantn une famille de polynômes définis modulo un coefficient supérieur plus un, avec des coefficients entiers prenant des valeurs elles aussi définies modulo un entier. L'article <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">suivant</a> de <i>n1 analytics</i> explique cela de manière progressive et détaillée.</p>
+          <h4>Chiffrement homomorphe</h4>
+          <p>Le chiffrement homomorphe, utilisé dans le protocole Gazelle présenté dans la section suivante, est essentiel pour tous les protocoles effectuant des opérations sur les données chiffrées. Il s'agit d'un type de chiffrement supportant, lorsque des opérations sont effectuées sur les information chiffrées, que le déchiffrage laisse apparaître ces mêmes opérations effectuées sur les données d'origine.</p>
+          <p>On peut définir un chiffrement homomorphe par exemple à partir de moduli polynomiaux, en utilisantn une famille de polynômes définis modulo un coefficient supérieur plus un, avec des coefficients entiers prenant des valeurs elles aussi définies modulo un entier. L'article <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">suivant</a> de <i>n1 analytics</i> explique cela de manière progressive et détaillée.</p>
           </div>
       </div>
     </div>
@@ -258,7 +258,7 @@
       <div class="col-md-8">
         <div class="about-text">
           <h4>Chiffrement recherchable</h4>
-          <p>Le chiffrement recherchable (ou <i>searchable encryption</i> en anglais), correspond à une transposition similaire à celle du chifrement homomorphique, mais où l'on peut effectuer des recherche dans l'espace des données transcrites sans en connaître le contenu, mais en utilisant le fait que des données similaires aient également des formes cryptées similaires.</p>
+          <p>Le chiffrement recherchable (ou <i>searchable encryption</i> en anglais), correspond à une transposition similaire à celle du chifrement homomorphe, mais où l'on peut effectuer des recherche dans l'espace des données transcrites sans en connaître le contenu, mais en utilisant le fait que des données similaires aient également des formes cryptées similaires.</p>
           </div>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-4 web">
@@ -302,14 +302,14 @@
     <div class="space"></div>
 
     <div class="subsection-title text-center center">
-      <h3>Utilisation du chiffrement homomorphique, étude à partir du cas des moduli polynomiaux</h3>
+      <h3>Utilisation du chiffrement homomorphe, étude à partir du cas des moduli polynomiaux</h3>
     </div>
     <div class="space"></div>
     <div class="row">
       <div class="col-md-7">
         <div class="about-text">
           <h4>Constitution du message chiffré</h4>
-          <p>Dans l'exemple de chiffrement homomorphique par moduli polynomiaux cité dans la partie précédente et expliqué plus en détail <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">ici</a>, on peut voir que le chiffrement homomorphique utilise une clé privée (<i>s</i> dans l'équation ci-contre), un masque changeant à chaque chiffrement, défini à partir d'un polynôme <i>u</i> tiré aléatoirement, une clé publique correspondant à la clé privée, et du bruit.</p>
+          <p>Dans l'exemple de chiffrement homomorphe par moduli polynomiaux cité dans la partie précédente et expliqué plus en détail <a href="https://blog.n1analytics.com/homomorphic-encryption-illustrated-primer/">ici</a>, on peut voir que le chiffrement homomorphe utilise une clé privée (<i>s</i> dans l'équation ci-contre), un masque changeant à chaque chiffrement, défini à partir d'un polynôme <i>u</i> tiré aléatoirement, une clé publique correspondant à la clé privée, et du bruit.</p>
           <p>Dans l'équation ci-contre, le message correspond au polynôme noté <i>m</i>, t est l'entier modulo lequel sont définis les coefficients polynomiaux du message à chiffrer, et q l'entier modulo lequel sont définis les coefficients de la clé publique. <i>u</i> et <i>s</i> prennent des coefficients égaux à -1, 0 ou 1, et les erreurs des coefficients faibles définis par des lois gaussiennes relativement à <i>q</i>. </p>
           <p>Finalement, le texte chiffré est constitué des deux polynômes présentés ci-contre. </p>
           </div>
